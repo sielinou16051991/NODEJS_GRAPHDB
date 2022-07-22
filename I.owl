@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localhost:8080/FormulaireOntology#"
+     xml:base="http://localhost:8080/FormulaireOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localhost:8080/FormulaireOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/FormulaireOntology#hasComponent">
+        <rdfs:domain rdf:resource="http://localhost:8080/FormulaireOntology#Component"/>
+        <rdfs:range rdf:resource="http://localhost:8080/FormulaireOntology#Formulaire"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/FormulaireOntology#hasID">
+        <rdfs:domain rdf:resource="http://localhost:8080/FormulaireOntology#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#hasLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/FormulaireOntology#hasLabel">
+        <rdfs:domain rdf:resource="http://localhost:8080/FormulaireOntology#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/FormulaireOntology#hasName">
+        <rdfs:domain rdf:resource="http://localhost:8080/FormulaireOntology#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/FormulaireOntology#hasTitle">
+        <rdfs:domain rdf:resource="http://localhost:8080/FormulaireOntology#Formulaire"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/FormulaireOntology#hasValue">
+        <rdfs:domain rdf:resource="http://localhost:8080/FormulaireOntology#Component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#ChexBox -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#ChexBox">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#Component -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#Component"/>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#DateTime -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#DateTime">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#Formulaire -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#Formulaire"/>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#Input -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#Input">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#Radio -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#Radio">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#Select -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#Select">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#Text -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#Text">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Input"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/FormulaireOntology#TextArea -->
+
+    <owl:Class rdf:about="http://localhost:8080/FormulaireOntology#TextArea">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/FormulaireOntology#Input"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
